@@ -1,1 +1,3 @@
-This is a repository to store bash scripts
+The ! symbol at the beginning of the line is used to negate the exit status of the command -v aspell command. This means that the if statement will be true (i.e., aspell is not installed) only if the command -v aspell command returns a non-zero exit status, indicating that aspell is not found in the system's PATH.
+The script first prompts the user to enter the folder path using the read command, which stores the user's input in the folder_path variable.
+Then, it uses a for loop to iterate over every .txt file in the folder using the wildcard "$folder_path"/*.txt. For each file, it prints a message to the console indicating which file is being checked, and then runs the aspell -c command to spell check the file. The -c flag tells aspell to check the file and provide suggested corrections interactively in the console.
